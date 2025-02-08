@@ -2,104 +2,38 @@
 <html>
 <head>
 <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <title>Untitled Document</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 	
-	<style>
-body {font-family: Arial;}
-
-/* Style the tab */
-.tab {
-	width: 80%;
-  overflow: hidden;
-  border: 1px solid #ccc;
-border-bottom: 5px solid #EB4E01;
-	box-shadow: 0 3px 5px rgba(0,0,0,0.2);
-
-}
-
-/* Style the buttons inside the tab */
-.tab button {
-  background: #3F3F3D;
-  float: left;
-  border: white;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  transition: 0.3s;
-  font-size: 17px;
-}
-
-tab button:before {
-	content: "";
-	display: block;
-	position: absolute;
-	z-index: -100;
-	width: 100%;
-	left: 0;
-	margin-top: 16px;
-	height: 80px;
-	background: #2B2A28;
-	border-bottom: 5px solid #EB4E01;
-}
-tab button:after {
-	content: "";
-	display: block;
-	position: absolute;
-	z-index: 0;
-	height: 80px;
-	width: 102px;
-	background: #EB4E01;
-	transition: transform 400ms;
-}
-/* Change background color of buttons on hover */
-.tab button:hover {
- background-color: #EB4E01;
 	
+	
+<link href="style.css" rel="stylesheet" type="text/css">
+<link href="css/bootstrap-4.4.1.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+body {
+    background-image: url(img/bkg.jpg);
+    background-repeat: no-repeat;
 }
-
-/* Create an active/current tablink class */
-.tab button.active {
-  background-color: orangered;
-}
-
-/* Style the tab content */
-.tabcontent {
-width: 80%;
-height: 600px;
-  display: none;
-  padding: 6px 12px;
-  border: 1px solid #ccc;
-  border-top: none;
-}
-.tablinks {
-border: red;
-color: white;
-}
-button{
-border: #CB1A1D;			
-}
-
-iframe {
-         border: none;
-	height: 100%;	
-		}
-		div#New York.tabcontent {
-		height: 400pxdiv#New York.tabcontent {
-		height: 100%;	
-			
-		}
-		div#Tokyo.tabcontent {
-		height: 100%;	
-		}
 </style>
-	
 </head>
 
 <body>
+	
+	<div class="container-fluid">
+		
+	  <div class="banner">classification</div>
+	  <h1 align="center"> the title here</h1>
 
- <p>this is a  test</p> 
-	<div class="tab">
+ <div class="row">
+ <div class="col-xl-6"><img src="img/seal1.png" width="90" height="90" alt=""/><img src="img/seal2.png" width="90" height="90" alt=""/></div>
+ <div class="col-xl-6">
+<span>1ine1 |  1a</span> 
+	 <br>
+<span>line 2 goes here</span>
+	</div>
+	  </div>
+<div class="tab">
   <button class="tablinks" onclick="openCity(event, 'London')">London</button>
   <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
   <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
@@ -109,7 +43,7 @@ iframe {
 
 <div id="London" class="tabcontent">
   <h3>London</h3>
-  <p>London is the capital city of England. and it has fallen again</p>
+  <p>London is the capital city of England.</p>
 </div>
 
 <div id="Paris" class="tabcontent">
@@ -132,6 +66,9 @@ iframe {
 
 </div>	
 
+	</div>		
+		
+		
 <script>
 function openCity(evt, cityName) {
   var i, tabcontent, tablinks;
