@@ -1,10 +1,17 @@
 @charset "utf-8";
+@import url("table.css");
 /* CSS Document */
 
 
-body {font-family: Arial;}
-
+	
+body {
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    background-image: url(img/bkg.jpg);
+    background-repeat: no-repeat;  
 /* Style the tab */
+}
 .banner {
 margin: 0;
  padding: 0;
@@ -22,9 +29,9 @@ background-color: #38023B;
 color: white;	
 }
 .tab {
-	width: 80%;
+	width: 100%;
   overflow: hidden;
-  border: 1px solid #ccc;
+ 
 	
 border-bottom: 5px solid #EB4E01;
 	box-shadow: 0 3px 5px rgba(0,0,0,0.2);
@@ -35,7 +42,7 @@ border-bottom: 5px solid #EB4E01;
 .tab button {
   background: #3F3F3D;
   float: left;
-  border: white;
+
   outline: none;
   cursor: pointer;
   padding: 14px 16px;
@@ -78,11 +85,11 @@ tab button:after {
 
 /* Style the tab content */
 .tabcontent {
-width: 80%;
+width: 100%;
 height: 600px;
-  display: none;
+ 
   padding: 6px 12px;
-  border: 1px solid #ccc;
+ 
   border-top: none;
 }
 .tablinks {
@@ -105,3 +112,9 @@ iframe {
 		div#Tokyo.tabcontent {
 		height: 100%;	
 		}
+#dynamicFrame {
+  /* Swap for your desired aspect ratio */
+  aspect-ratio 16/9;
+  width: 100%;
+  height: auto;
+}
